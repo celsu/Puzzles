@@ -27,9 +27,7 @@ public class Main {
             for (int i = 0; i < li.size(); i++) {
                 maxAt = li.get(i) > li.get(maxAt) ? i : maxAt;
             }
-
             System.out.println(maxAt);
-
             li.clear();
 
         }
