@@ -1,17 +1,37 @@
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
+import java.util.ArrayList;
+import java.util.Scanner;
+
 public class Main {
-    public static void main(String[] args) {
-        // Press Alt+Enter with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+    public static void main(String args[]) {
+        Scanner in = new Scanner(System.in);
 
-        // Press Shift+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
+        ArrayList<Integer> li = new ArrayList<Integer>();
 
-            // Press Shift+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
+
+        int maxAt = 0;
+
+        // game loop
+        while (true) {
+
+            for (int i = 0; i < 8; i++) {
+                int mountainH = in.nextInt(); // represents the height of one mountain.
+                li.add(mountainH);
+                System.err.println(li);
+            }
+            //List<Integer> sortedList = li.stream().sorted().collect(Collectors.toList());
+            //System.err.println(sortedList);
+
+            //sortedList = li.stream().sorted().collect(Collectors.toList());
+            //System.out.println(5);
+
+            for (int i = 0; i < li.size(); i++) {
+                maxAt = li.get(i) > li.get(maxAt) ? i : maxAt;
+            }
+
+            System.out.println(maxAt);
+
+            li.clear();
+
         }
     }
 }
