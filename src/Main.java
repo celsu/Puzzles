@@ -35,7 +35,7 @@ public class Main {
             System.out.println(maxAt);
             li.clear();
 
-            //HELP STRREAM
+            //HELP STREAM
             //List<Integer> sortedList = li.stream().sorted().collect(Collectors.toList());
 
     }
