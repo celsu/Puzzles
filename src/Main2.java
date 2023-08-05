@@ -5,11 +5,10 @@ public class Main2 {
 
         //https://docs.oracle.com/javase/8/docs/api/?java/lang/StringBuilder.html
 
-        String s = "Battery";
+        String s = "Batteryu a ooka";
 
         StringBuilder sb = new StringBuilder(s);
         int soma = 0;
-
 
         for (int i = 0; i < sb.length(); i++) {
             //System.out.println(sb.charAt(i));
@@ -21,10 +20,6 @@ public class Main2 {
         }
 
         System.out.println("A soma e: "+soma);
-
-
-
-
 
         //Metodo Chars retorna Int
         //long vowel_num = type_hold.toString().toLowerCase().chars().filter(it -> "aeiou".indexOf(it) != -1).count();
