@@ -20,7 +20,7 @@ public class Main2 {
             if(sb.charAt(i) == 'u') totalWeight += 5;
         }*/
 
-        //Usando swtich case
+        //SWITCH CASE
         for (char c : s.toUpperCase().toCharArray()) {
             if (vowels.contains(String.valueOf(c))) {
                 switch (c) {
@@ -42,7 +42,7 @@ public class Main2 {
                 }
             }
         }
-        //valueof "converte" o char no string para ser comparado
+        //valueof "CONVERTE" O CHAR NO STRING PARA SER COMPARADO
                /* for (char c : input.toUpperCase().toCharArray()) {
                     if (vowels.contains(String.valueOf(c))) {
                         totalWeight += vowels.indexOf(c) + 1;
@@ -51,8 +51,19 @@ public class Main2 {
 
         System.out.println("A soma e: "+totalWeight);
 
-        //Metodo Chars retorna Int
+        //METODO CHARS RETORNA INT
         /*long vowel_num = type_hold.toString().toLowerCase().chars()
          .filter(it -> "aeiou".indexOf(it) != -1).count();*/
+
+
+        //PEGAR NUMEROS PAR E SOMA-LOS NO RANGE DADO EM N
+            /*int N = 10;
+            int sum = 0;
+            for (int i = 2; i <= N; i += 2) {
+                sum += i;
+            }
+            System.out.println(sum);*/
+
+
     }
 }

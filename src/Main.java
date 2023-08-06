@@ -3,7 +3,6 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String args[]) {
-        //Scanner in = new Scanner(System.in);
 
         ArrayList<Integer> li = new ArrayList<Integer>();
         li.add(2);
@@ -17,7 +16,7 @@ public class Main {
 
         int maxAt = 0;
 
-        // game loop
+        //game loop
 
             for (int i = 0; i < 8; i++) {
                 //int mountainH = in.nextInt(); // represents the height of one mountain.
