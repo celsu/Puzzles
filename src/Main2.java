@@ -10,6 +10,7 @@ public class Main2 {
         int totalWeight = 0;
         String vowels = "AEIOU";
 
+
         //FOR SIMPLES
        /* for (int i = 0; i < sb.length(); i++) {
             //System.out.println(sb.charAt(i));
