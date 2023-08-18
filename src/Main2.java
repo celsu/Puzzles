@@ -5,11 +5,11 @@ public class Main2 {
     public static void main(String args[]) {
         //https://docs.oracle.com/javase/8/docs/api/?java/lang/StringBuilder.html
 
-        String s = "Bea";
+        /*String s = "Bea";
 
         StringBuilder sb = new StringBuilder(s);
         int totalWeight = 0;
-        String vowels = "AEIOU";
+        String vowels = "AEIOU";*/
 
 
         //FOR SIMPLES
@@ -23,7 +23,7 @@ public class Main2 {
         }*/
 
         //SWITCH CASE
-        for (char c : s.toUpperCase().toCharArray()) {
+        /*for (char c : s.toUpperCase().toCharArray()) {
             if (vowels.contains(String.valueOf(c))) {
                 switch (c) {
                     case 'A':
@@ -43,7 +43,7 @@ public class Main2 {
                         break;
                 }
             }
-        }
+        }*/
         //valueof "CONVERTE" O CHAR NO STRING PARA SER COMPARADO
                /* for (char c : input.toUpperCase().toCharArray()) {
                     if (vowels.contains(String.valueOf(c))) {
@@ -51,7 +51,7 @@ public class Main2 {
                     }
                 }*/
 
-        System.out.println("A soma e: "+totalWeight);
+        //System.out.println("A soma e: "+totalWeight);
 
         //METODO CHARS RETORNA INT
         /*long vowel_num = type_hold.toString().toLowerCase().chars()
@@ -68,10 +68,10 @@ public class Main2 {
 
 
         //String[] celso = new String[5];
-        ArrayList ce = new ArrayList<>();
+        /*ArrayList ce = new ArrayList<>();
         for(int i=0;i<ce.size();i++){
             ce.add("lala");
-        }
+        }*/
 
 
 
@@ -85,14 +85,24 @@ public class Main2 {
         l1.add(4);
         l1.add(5);
 
-        for(int i=0; i<l1.size(); i++){
+        /*while (iterator.hasNext()) {
+            if (iterator.next() % 2 == 0) {
+                iterator.remove();
+            }
+        }*/
+
+        /*for(int i=0; i<l1.size(); i++){
             if(l1.get(i)%2==0){
                 l1.remove(l1.get(i));
             }
         }
+        l1.stream().filter(h -> h%2!=0).forEach(System.out::println);*/
+        l1.forEach(System.out::println);
 
-        l1.stream().filter(h -> h%2!=0).forEach(System.out::println);
-
+        /*for(Integer n : l1){
+            System.out.println(n);
+        }*/
+        //List<Integer> sortedList = li.stream().sorted().collect(Collectors.toList());
 
     }
 }
