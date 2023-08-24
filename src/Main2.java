@@ -103,6 +103,7 @@ public class Main2 {
             System.out.println(n);
         }*/
         //List<Integer> sortedList = li.stream().sorted().collect(Collectors.toList());
+        //productList.forEach(product -> System.out.println("Product Details: " + product));
 
     }
 }
