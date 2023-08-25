@@ -4,14 +4,11 @@ public class Main4 {
     public static void main(String[] args) {
         testArray("Apple", "Banana", "Orange"); // Exemplo de Array: Armazenar frutas
         testLinkedList("Cat", "Dog", "Elephant"); // Exemplo de Listas Ligadas: Animais em uma fila
-        testStack("Red", "Green", "Blue"); // Exemplo de Pilhas: Cores em ordem reversa
-        testQueue("Monday", "Tuesday", "Wednesday"); // Exemplo de Filas: Dias da semana em ordem
-        // testTree("Folder A", "Folder B"); // Uso para estruturas de diretórios
-        testHashMap("Key1", "Value1", "Key2", "Value2"); // Exemplo de Tabelas Hash: Associação chave-valor
-        // testGraph("Alice", "Bob", "Charlie"); // Uso para redes sociais
-        // testMatrix("A", "B", "C"); // Uso para dados tabulares
-        testPriorityQueue("High", "Medium", "Low"); // Exemplo de Filas de Prioridade: Priorização de tarefas
-        testSet("Apple", "Banana", "Apple"); // Exemplo de Conjuntos: Nomes únicos
+        testStack("Enter building", "Take elevator", "Reach top floor"); // Exemplo de Pilhas: Rotina para chegar ao topo do prédio
+        testQueue("Order placed", "Payment received", "Preparing your meal"); // Exemplo de Filas: Processo de pedido de comida
+        testHashMap("Username", "JohnDoe", "Password", "Secret123"); // Exemplo de Tabelas Hash: Armazenamento seguro de informações
+        testPriorityQueue("High priority task", "Medium priority task", "Low priority task"); // Exemplo de Filas de Prioridade: Organização de tarefas
+        testSet("Apple", "Banana", "Apple"); // Exemplo de Conjuntos: Armazenamento de frutas únicas
     }
 
     /**
@@ -22,11 +19,12 @@ public class Main4 {
      */
     public static void testArray(String... elements) {
         System.out.println("Array:");
-        String[] arr = new String[elements.length];
-        for (int i = 0; i < elements.length; i++) {
-            arr[i] = elements[i];
-        }
-        System.out.println(Arrays.toString(arr));
+        ArrayList<String> arrayList = new ArrayList<>(Arrays.asList(elements));
+
+        System.out.println("Original: " + arrayList);
+        arrayList.add("Grapes"); // Adicionando nova fruta
+        arrayList.remove("Banana"); // Removendo fruta existente
+        System.out.println("Updated: " + arrayList);
     }
 
     /**
@@ -37,9 +35,12 @@ public class Main4 {
      */
     public static void testLinkedList(String... elements) {
         System.out.println("Linked List:");
-        LinkedList<String> linkedList = new LinkedList<>();
-        linkedList.addAll(Arrays.asList(elements));
-        System.out.println(linkedList);
+        LinkedList<String> linkedList = new LinkedList<>(Arrays.asList(elements));
+
+        System.out.println("Original: " + linkedList);
+        linkedList.addFirst("Giraffe"); // Adicionando animal na frente
+        linkedList.removeLast(); // Removendo último animal
+        System.out.println("Updated: " + linkedList);
     }
 
     /**
@@ -52,7 +53,11 @@ public class Main4 {
         System.out.println("Stack:");
         Stack<String> stack = new Stack<>();
         stack.addAll(Arrays.asList(elements));
-        System.out.println(stack);
+
+        System.out.println("Original: " + stack);
+        stack.push("Take stairs"); // Adicionando etapa
+        stack.pop(); // Removendo etapa concluída
+        System.out.println("Updated: " + stack);
     }
 
     /**
@@ -63,9 +68,12 @@ public class Main4 {
      */
     public static void testQueue(String... elements) {
         System.out.println("Queue:");
-        Queue<String> queue = new LinkedList<>();
-        queue.addAll(Arrays.asList(elements));
-        System.out.println(queue);
+        Queue<String> queue = new LinkedList<>(Arrays.asList(elements));
+
+        System.out.println("Original: " + queue);
+        queue.offer("Cooking meal"); // Adicionando etapa de cozimento
+        queue.poll(); // Removendo etapa concluída
+        System.out.println("Updated: " + queue);
     }
 
     /**
@@ -90,7 +98,11 @@ public class Main4 {
         for (int i = 0; i < elements.length; i += 2) {
             hashMap.put(elements[i], elements[i + 1]);
         }
-        System.out.println(hashMap);
+
+        System.out.println("Original: " + hashMap);
+        hashMap.put("Email", "john@example.com"); // Atualizando email
+        hashMap.remove("Password"); // Removendo senha
+        System.out.println("Updated: " + hashMap);
     }
 
     /**
@@ -122,7 +134,11 @@ public class Main4 {
     public static void testPriorityQueue(String... elements) {
         System.out.println("Priority Queue:");
         PriorityQueue<String> priorityQueue = new PriorityQueue<>(Arrays.asList(elements));
-        System.out.println(priorityQueue);
+
+        System.out.println("Original: " + priorityQueue);
+        priorityQueue.add("Urgent task"); // Adicionando tarefa urgente
+        priorityQueue.poll(); // Concluindo tarefa prioritária
+        System.out.println("Updated: " + priorityQueue);
     }
 
     /**
@@ -134,6 +150,10 @@ public class Main4 {
     public static void testSet(String... elements) {
         System.out.println("Set:");
         Set<String> set = new HashSet<>(Arrays.asList(elements));
-        System.out.println(set);
+
+        System.out.println("Original: " + set);
+        set.add("Apple"); // Tentando adicionar fruta repetida
+        set.remove("Banana"); // Removendo fruta
+        System.out.println("Updated: " + set);
     }
 }
