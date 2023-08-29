@@ -28,7 +28,7 @@ public class Main4 {
     }
 
     /**
-     * Listas Ligadas:
+     * Listas Ligadas: LinkedList
      * - Boa para inserção e remoção frequentes.
      * - Uso eficiente de memória.
      * Exemplo de Listas Ligadas: Animais em uma fila.
@@ -102,6 +102,7 @@ public class Main4 {
         System.out.println("Original: " + hashMap);
         hashMap.put("Email", "john@example.com"); // Atualizando email
         hashMap.remove("Password"); // Removendo senha
+        System.out.println("Username:"+hashMap.get("Username"));
         System.out.println("Updated: " + hashMap);
     }
 
