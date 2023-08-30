@@ -144,9 +144,9 @@ public class Main4 {
 
     /**
      * Conjuntos:
-     * - Armazenamento de elementos únicos.
+     * - Armazenamento de elementos únicos
      * - Não mantém ordem específica.
-     * Exemplo de Conjuntos: Nomes únicos.
+     * Exemplo de Conjuntos: Nomes únicos
      */
     public static void testSet(String... elements) {
         System.out.println("Set:");
