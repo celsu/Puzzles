@@ -102,6 +102,7 @@ public class Main4 {
         System.out.println("Original: " + hashMap);
         hashMap.put("Email", "john@example.com"); // Atualizando email
         hashMap.remove("Password"); // Removendo senha
+        //pegando key
         System.out.println("Username:"+hashMap.get("Username"));
         System.out.println("Updated: " + hashMap);
     }
