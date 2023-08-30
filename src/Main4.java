@@ -103,7 +103,7 @@ public class Main4 {
         hashMap.put("Email", "john@example.com"); // Atualizando email
         hashMap.remove("Password"); // Removendo senha
         System.out.println("Username:"+hashMap.get("Username"));
-        System.out.println("Updated: " + hashMap);git staut
+        System.out.println("Updated: " + hashMap);
     }
 
     /**
