@@ -43,7 +43,7 @@ public class Main4 {
         System.out.println("Updated: " + linkedList);
     }
 
-    /**
+    /*
      * Pilhas
      * - Útil para controle de chamadas/recursões.
      * - Implementa princípio LIFO (Last-In-First-Out).
