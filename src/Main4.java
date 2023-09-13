@@ -44,7 +44,7 @@ public class Main4 {
     }
 
     /**
-     * Pilhas:
+     * Pilhas
      * - Útil para controle de chamadas/recursões.
      * - Implementa princípio LIFO (Last-In-First-Out).
      * Exemplo de Pilhas: Cores em ordem reversa.
