@@ -32,7 +32,7 @@ public class Main4 {
      * - Boa para inserção e remoção frequentes.
      * - Uso eficiente de memória.
      * Exemplo de Listas Ligadas: Animais em uma fila.
-     */
+     *aaa/
     public static void testLinkedList(String... elements) {
         System.out.println("Linked List:");
         LinkedList<String> linkedList = new LinkedList<>(Arrays.asList(elements));
